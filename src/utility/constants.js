@@ -17,7 +17,7 @@ export const GET_AUTHORITY_PROFILE =
 export const UPDATE_USER_STATUS =
   AWS_SERVER_DOMAIN + "/api/authority/update/user/status";
 export const SEND_EMAIL = AWS_SERVER_DOMAIN + "/api/authority/send/email";
-export const HOST_NAME = "http://localhost:3000";
+export const HOST_NAME = "http://nirbhay.me/spothole.authority";
 export const AUTHORITY_CHAT_LOGO = "https://i.ibb.co/Nry0dDp/image.png";
 export const ROUTE_ICON_IMAGE =
   "https://cdn4.iconfinder.com/data/icons/car-accident-2/512/pothole-road-hole-danger-street-accident-512.png";
@@ -27,4 +27,4 @@ export const ROUTE_ICON_IMAGE_MEDIUM =
   "https://i.ibb.co/RC2LmDh/output-onlinepngtools-1.png";
 export const ROUTE_ICON_IMAGE_HIGH =
   "https://i.ibb.co/kMZV43H/output-onlinepngtools.png";
-export const UA_LOGIN = "https://nirbhay.me/spothole/404";
+export const UA_LOGIN = "https://nirbhay.me/spothole.authority/UALogin";

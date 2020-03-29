@@ -26,7 +26,7 @@ import {
 } from "@material-ui/core/styles";
 
 let self;
-
+/*
 const styles = makeStyles(theme => ({
   root: {
     flexGrow: 1
@@ -36,7 +36,7 @@ const styles = makeStyles(theme => ({
     textAlign: "center",
     color: theme.palette.text.secondary
   }
-}));
+}));*/
 
 let getMuiTheme = () =>
   createMuiTheme({
@@ -56,7 +56,9 @@ class Dashboard extends React.Component {
     this.state = {
       reportsDataTable: "",
       dataModal: "",
-      completeData: []
+      completeData: new Array(),
+      pieChart: "",
+      barChart: ""
     };
 
     self = this;
@@ -70,7 +72,7 @@ class Dashboard extends React.Component {
       .then(response => {
         if (response.data.length > 0) {
           let data = response.data;
-          self.setState({
+          this.setState({
             completeData: data
           });
           let formattedData = data.map(report => {
@@ -131,7 +133,9 @@ class Dashboard extends React.Component {
                   style={{ cursor: "pointer" }}
                 />
               </MuiThemeProvider>
-            )
+            ),
+            pieChart: <PieChartBlock data={data} />,
+            barChart: <BarChartBlock data={data} />
           });
         }
       });
@@ -152,10 +156,9 @@ class Dashboard extends React.Component {
   };
 
   render() {
-    const { classes } = this.props;
     return (
       <div>
-        {this.state.completeData.length === 0 && (
+        {this.state.pieChart === "" && (
           <div
             style={{
               textAlign: "center",
@@ -167,22 +170,18 @@ class Dashboard extends React.Component {
           >
             {" "}
             No Reports in your Zone yet. <br /> You can keep monitoring this
-            page <br /> for new Reports
+            page <br /> for New Reports
           </div>
         )}
-        {this.state.completeData.length !== 0 && (
+        {this.state.pieChart !== "" && (
           <div>
             <Container>
               <Grid style={{ marginTop: "100px" }} container spacing={3}>
                 <Grid item sm={5}>
-                  <Paper className={classes.paper}>
-                    <PieChartBlock data={this.state.completeData} />
-                  </Paper>
+                  <Paper>{this.state.pieChart}</Paper>
                 </Grid>
                 <Grid item sm={7}>
-                  <Paper className={classes.paper}>
-                    <BarChartBlock data={this.state.completeData} />
-                  </Paper>
+                  <Paper>{this.state.barChart}</Paper>
                 </Grid>
               </Grid>
             </Container>
@@ -197,4 +196,4 @@ class Dashboard extends React.Component {
   }
 }
 
-export default withStyles(styles)(Dashboard);
+export default Dashboard;
