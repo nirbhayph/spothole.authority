@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/spothole.authority/static/css/main.fc01929c.chunk.css",
-    "main.js": "/spothole.authority/static/js/main.3d714f63.chunk.js",
-    "main.js.map": "/spothole.authority/static/js/main.3d714f63.chunk.js.map",
+    "main.js": "/spothole.authority/static/js/main.97bb0e95.chunk.js",
+    "main.js.map": "/spothole.authority/static/js/main.97bb0e95.chunk.js.map",
     "runtime-main.js": "/spothole.authority/static/js/runtime-main.88b3e7ad.js",
     "runtime-main.js.map": "/spothole.authority/static/js/runtime-main.88b3e7ad.js.map",
     "static/css/2.de424728.chunk.css": "/spothole.authority/static/css/2.de424728.chunk.css",
     "static/js/2.dab680e5.chunk.js": "/spothole.authority/static/js/2.dab680e5.chunk.js",
     "static/js/2.dab680e5.chunk.js.map": "/spothole.authority/static/js/2.dab680e5.chunk.js.map",
     "index.html": "/spothole.authority/index.html",
-    "precache-manifest.6381a8fffad21c9f3b9751a45073a185.js": "/spothole.authority/precache-manifest.6381a8fffad21c9f3b9751a45073a185.js",
+    "precache-manifest.fba09c55abc69f0e68f1b0e02bfd47de.js": "/spothole.authority/precache-manifest.fba09c55abc69f0e68f1b0e02bfd47de.js",
     "service-worker.js": "/spothole.authority/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/spothole.authority/static/css/2.de424728.chunk.css.map",
     "static/css/main.fc01929c.chunk.css.map": "/spothole.authority/static/css/main.fc01929c.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.de424728.chunk.css",
     "static/js/2.dab680e5.chunk.js",
     "static/css/main.fc01929c.chunk.css",
-    "static/js/main.3d714f63.chunk.js"
+    "static/js/main.97bb0e95.chunk.js"
   ]
 }
