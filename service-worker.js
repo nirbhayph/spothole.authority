@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/spothole.authority/precache-manifest.edb62e5cfb75ce098dd9880440d37a92.js"
+  "/spothole.authority/precache-manifest.9b697d2d010053ac8a277f4507bc18f1.js"
 );
 
 self.addEventListener('message', (event) => {
