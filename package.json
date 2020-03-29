@@ -1,5 +1,5 @@
 {
-  "name": "spothole-authority",
+  "name": "spothole.authority",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
