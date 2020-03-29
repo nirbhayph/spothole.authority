@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a4faf320b789fc971be2fcf91393dfa7",
+    "revision": "be64b36e42cfb497d0a344aae5459913",
     "url": "/spothole.authority/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/spothole.authority/static/css/2.de424728.chunk.css"
   },
   {
-    "revision": "fefd27a7244d908437be",
+    "revision": "4c4b3c33fca9574c7d1a",
     "url": "/spothole.authority/static/css/main.fc01929c.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/spothole.authority/static/js/2.58690e7f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fefd27a7244d908437be",
-    "url": "/spothole.authority/static/js/main.3e936a74.chunk.js"
+    "revision": "4c4b3c33fca9574c7d1a",
+    "url": "/spothole.authority/static/js/main.f4c72311.chunk.js"
   },
   {
     "revision": "e4449a0383e5c85e5abc",
