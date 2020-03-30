@@ -8,7 +8,7 @@ import Grid from "@material-ui/core/Grid";
 import LockOpenIcon from "@material-ui/icons/LockOpen";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
-import PinDropIcon from "@material-ui/icons/PinDrop";
+import LogoDisplay from "./../logo_display";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -76,20 +76,17 @@ export default function SignInSide(props) {
             style={{ marginTop: "100px" }}
           >
             <b>
-              <PinDropIcon fontSize={"inherit"} />
+              <LogoDisplay />
             </b>
           </Typography>
           <br />
-          <Typography component="h1" variant="h3">
-            <b>Spothole</b>
-          </Typography>
           <br />
           <Typography
             component="h1"
-            variant="h5"
+            variant="h4"
             style={{ marginTop: "100px" }}
           >
-            <b>Sign In</b>
+            <b>Authority Log-In</b>
           </Typography>
           <Button
             type="submit"

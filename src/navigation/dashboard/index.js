@@ -26,7 +26,7 @@ import {
 } from "@material-ui/core/styles";
 
 let self;
-/*
+
 const styles = makeStyles(theme => ({
   root: {
     flexGrow: 1
@@ -36,7 +36,7 @@ const styles = makeStyles(theme => ({
     textAlign: "center",
     color: theme.palette.text.secondary
   }
-}));*/
+}));
 
 let getMuiTheme = () =>
   createMuiTheme({
@@ -56,7 +56,6 @@ class Dashboard extends React.Component {
     this.state = {
       reportsDataTable: "",
       dataModal: "",
-      completeData: new Array(),
       pieChart: "",
       barChart: ""
     };
@@ -72,9 +71,6 @@ class Dashboard extends React.Component {
       .then(response => {
         if (response.data.length > 0) {
           let data = response.data;
-          this.setState({
-            completeData: data
-          });
           let formattedData = data.map(report => {
             let formattedReport = {};
             formattedReport["Case Id"] = report.case_id;
@@ -196,4 +192,4 @@ class Dashboard extends React.Component {
   }
 }
 
-export default Dashboard;
+export default withStyles(styles)(Dashboard);

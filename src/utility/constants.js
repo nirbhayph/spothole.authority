@@ -1,6 +1,6 @@
 // all server and image constants.
 export const CLIENT_ID =
-  "53865530561-eoook3l9t27uvkec6561d3aolde6mims.apps.googleusercontent.com";
+  "53865530561-k1vrtof9nrliokat4rv1nkqf9pi57nlk.apps.googleusercontent.com";
 export const AWS_SERVER_DOMAIN = "https://spothole.ml:5000";
 export const SUBMIT_REPORT_COMMENT =
   AWS_SERVER_DOMAIN + "/api/submit/report/comment";
