@@ -69,8 +69,8 @@ class PieChartBlock extends PureComponent {
                 dataKey="value"
                 isAnimationActive={true}
                 data={dataToUse}
-                cx={200}
-                cy={200}
+                cx={165}
+                cy={170}
                 outerRadius={80}
                 label
                 innerRadius={60}
@@ -84,7 +84,11 @@ class PieChartBlock extends PureComponent {
                 ))}
               </Pie>
               <Tooltip />
-              <Legend />
+              <Legend
+                layout="horizontal"
+                align="center"
+                wrapperStyle={{ maxWidth: "300px" }}
+              />
             </PieChart>
             <br />
             {'"region and severity wise status summary"'}

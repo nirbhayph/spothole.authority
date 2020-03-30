@@ -140,7 +140,7 @@ export default function PersistentDrawerLeft() {
           </IconButton>
 
           <Typography style={{ display: appNameDisplay }} variant="h5" noWrap>
-            Spothole Authority
+            Authority
           </Typography>
           <div style={{ marginLeft: "auto" }}>
             <IconButton aria-label="About Me" color="inherit">

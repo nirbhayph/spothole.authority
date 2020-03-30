@@ -70,11 +70,7 @@ export default function SignInSide(props) {
         }}
       >
         <div className={classes.paper}>
-          <Typography
-            component="h1"
-            variant="h1"
-            style={{ marginTop: "100px" }}
-          >
+          <Typography component="h1" variant="h1" style={{ marginTop: "60px" }}>
             <b>
               <LogoDisplay />
             </b>

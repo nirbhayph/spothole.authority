@@ -41,7 +41,7 @@ class BarChartBlock extends PureComponent {
           <XAxis dataKey="name" />
           <YAxis />
           <Tooltip />
-          <Legend />
+          <Legend layout="horizontal" align="center" />{" "}
           <Bar dataKey="submitted" stackId="a" fill="#4285F4" />
           <Bar dataKey="approved" stackId="a" fill="#34A853" />
           <Bar dataKey="working" stackId="a" fill="#FBBC05" />

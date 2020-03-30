@@ -173,10 +173,10 @@ class Dashboard extends React.Component {
           <div>
             <Container>
               <Grid style={{ marginTop: "100px" }} container spacing={3}>
-                <Grid item sm={5}>
+                <Grid item sm={5} xs={12}>
                   <Paper>{this.state.pieChart}</Paper>
                 </Grid>
-                <Grid item sm={7}>
+                <Grid item sm={7} xs={12}>
                   <Paper>{this.state.barChart}</Paper>
                 </Grid>
               </Grid>
