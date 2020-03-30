@@ -66,7 +66,7 @@ export default class AlertDialogWithComment extends React.Component {
             let statusMessage =
               "Hi " +
               self.props.mailToProfileName +
-              ",\n\nThere is an update to your report. Please login to check the details. Thanks for being a part of the Spothole community.";
+              ",\n\nThere is an update to your report. Please login to check the details. \n\nIf you have additional questions, feel free to send an email to support.spothole@gmail.com. Thank you for being a part of the Spothole community.";
             axios
               .post(SEND_EMAIL, {
                 data: {
