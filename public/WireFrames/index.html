@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Wireframes | Spothole Authority App</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="jumbotron text-center" style="background-color: #2997F7; color: #fafafa">
+      <h1>Spothole (Authority App)</h1>
+      <p>
+        This page contains the wireframes for the <b>Spothole Authority App (Desktop
+        Variant)</b>
+      </p>
+      <p>Wireframes have been designed using <b>Figma</b></p>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9">
+          <iframe
+            style="border: 2px SOLID black; border-radius: 5px;"
+            width="100%"
+            height="600px"
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEDv77lokGclSECcgSNhaPA%2FSPOTHOLE%3Fnode-id%3D39%253A737%26scaling%3Dscale-down"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="col-sm-3">
+          <h3>Sign In Screen</h3>
+          <p>This screen represents the Google Login Screen</p>
+          <p>
+            It contains three main components. The background image (powered by
+            Unsplash), the Google Sign In Button and the App Logo.
+          </p>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-sm-5">
+          <h3>Dashboard Screen</h3>
+          <p>
+            Once the authority has signed in successfully, they are presented
+            with the dashboard screen which is divided into two main sections.
+          </p>
+          <p>
+            The first being the analytics section. This section contains two
+            charts.
+          </p>
+          <p>
+            The first is a donut chart which shows a high level view of the user
+            reports in the authority's zone based on the status (approved,
+            submitted, in progress, etc).
+          </p>
+          <p>
+            Next to that is the stacked bar chart which provides a more detailed
+            view of the status, but this time based on severity as well.
+          </p>
+          <p>
+            After which users are asked to use a progress indicator to specify
+            how severe the reported pothole(s) is(are) according to them.
+          </p>
+          <p>
+            The second section on the dashboard is a filterable data table
+            containing details about the various user reports. This datatable
+            has options for sorting, filtering, selecting specific columns,
+            searching, exporting the data as csv and printing the table contents
+            too.
+          </p>
+          <p>
+            On clicking any report in the datatable, the authority is presented
+            with the option to update it (status and severity). On pressing
+            update they are asked to describe their reason of update in a
+            required custom description box.
+          </p>
+          <p>
+            Authorities can also comment on the report they clicked on and view
+            all the other details of the report as a user would in their My
+            Complaints screen.
+          </p>
+          <p>
+            Users are sent notifications through email after any update is made
+            on their report.
+          </p>
+        </div>
+        <div class="col-sm-7">
+          <iframe
+            style="border: 2px SOLID black; border-radius: 5px;"
+            width="100%"
+            height="600px"
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEDv77lokGclSECcgSNhaPA%2FSPOTHOLE%3Fnode-id%3D33%253A146%26scaling%3Dscale-down"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-sm-9">
+          <iframe
+            style="border: 2px SOLID black; border-radius: 5px;"
+            width="100%"
+            height="600px"
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEDv77lokGclSECcgSNhaPA%2FSPOTHOLE%3Fnode-id%3D39%253A170%26scaling%3Dscale-down"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="col-sm-3">
+          <h3>Manage Users</h3>
+          <p>
+            This screen presents the authority to manage all active users in
+            their zone through a filterable data table.
+          </p>
+          <p>
+            The data table contains options to filter, search, sort, select
+            columns.
+          </p>
+          <p>They can view their basic profile details.</p>
+          <p>
+            They can update their status to either blocked or allowed based on
+            their activity too.
+          </p>
+          <p>
+            Users are sent out email notifications regarding updates in their
+            status every time an authority makes a change.
+          </p>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-sm-5">
+          <h3>Map Region View Screen</h3>
+          <p>
+            Another screen in the authority app is the map region view section.
+            Here they can view potholes reported in their region through an
+            interactive map view.
+          </p>
+          <p>A legend is displayed for helping understand the map better.</p>
+          <p>
+            Custom markers for potholes with different status values ranging on
+            severity are presented to the auhtority on the map.
+          </p>
+          <p>
+            Custom markers for potholes with status approved ranging on severity
+            are presented to the user on the route if they are close to the
+            route.
+          </p>
+          <p>
+            Authorities can click on any of the markers to view the information
+            window for it. On pressing the view button in the info window
+            authorities are presented with the view and update detailed report
+            section.
+          </p>
+          <p>
+            They can update the status and severity directly from this view
+            after clicking the button in the info window. On pressing update
+            they are asked to describe their reason of update in a required
+            custom description box.
+          </p>
+          <p>
+            Authorities can also comment on the report they clicked on and view
+            all the other details of the report as a user would in their My
+            Complaints screen.
+          </p>
+          <p>
+            Users are sent notifications through email after any update is made
+            on their report.
+          </p>
+          <p>Also, there is a street view renderer for the users.</p>
+          <p>
+            Finally there is an option to toggle on and off a heat map layer
+            which is weighted on the severity of potholes reported in the
+            region.
+          </p>
+        </div>
+        <div class="col-sm-7">
+          <iframe
+            style="border: 2px SOLID black; border-radius: 5px;"
+            width="100%"
+            height="600px"
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEDv77lokGclSECcgSNhaPA%2FSPOTHOLE%3Fnode-id%3D39%253A417%26scaling%3Dscale-down"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-sm-9">
+          <iframe
+            style="border: 2px SOLID black; border-radius: 5px;"
+            width="100%"
+            height="600px"
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEDv77lokGclSECcgSNhaPA%2FSPOTHOLE%3Fnode-id%3D39%253A450%26scaling%3Dscale-down"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="col-sm-3">
+          <h3>Profile Screen</h3>
+          <p>
+            This screen contains the basic details (avatar, name, email address
+            of the user)
+          </p>
+          <p>It also contains the address of the authority.</p>
+          <p>
+            It is then followed by a counter for reports in the authority's zone
+            with a status of either pending, in progress, approved, completed or
+            cancelled.
+          </p>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br />
+    <footer
+      class="container-fluid bg-4 text-center"
+      style="background-color: #212121; padding-top: 20px; padding-bottom: 20px; color: #fafafa"
+    >
+      <h2>Wireframes Built With <b>Figma</b></h2>
+      <p>
+        <h3>Nirbhay Pherwani</h3> <br />
+        <a href="https://nirbhay.me"><h4>About Me</h4></a> 
+        <a href="mailto:pherwani37@gmail.com"><h4>pherwani37@gmail.com</h4></a>
+        <a href="https://github.com/nirbhayph/spothole"><h4>Spothole Citizen App on GitHub</h4></a>
+        <br/>
+        <h4>Special Thanks to Roshni Wadhwa!</h4>
+        <h4>Master's Student in Human Computer Interaction @ RIT</h4>
+        <a href="https://roshniwadhwa.me"><h4>Roshni Wadhwa (About)</h4></a> 
+      </p>
+    </footer>
+  </body>
+</html>
