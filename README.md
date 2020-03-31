@@ -96,13 +96,13 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole.authority/Pro
 * The Application has been built using React.js
 * Material Design has been used throughout the App.
 * Material UI Icons have been used for Icons. 
-* MUI-Treasury Componenets have been used for additional needs (Like Card View in the My Complaints Screen)
+* MUI-Treasury Componenets have been used for additional needs (Like Card View in the Profile Screen)
 * Axios has been used for making REST Calls to the Backend.
-* FilePond and Supporting Libraries have been used for File Uploading to the Backend. 
 * GitHub Pages has been used for Static Deployment of the Application. 
-* React Google Maps has been used for all Mapping, Direction Rendering, Geocoding and Reverse Geocoding Needs. 
-* React HTML5 Camera Component has been used for WebRTC based Media Capturing for Creating New Reports.
+* React Google Maps has been used for all Mapping, Heat Mapping, Marker Needs. 
 * Google Oauth 2.0 has been used Application Wide for Authentication Purposes. 
+* Material UI Datatables are used for Displaying Zone Wise Report Data and Managing Users. 
+* Recharts is used for Analytics Needs. 
 
 #### Libarary Details
 | Library Name | Version |
@@ -251,3 +251,4 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 * @figma - https://figma.com
 * @google-keep - https://keep.google.com
 * @npmjs - https://www.npmjs.com
+* @imgbb - https://imgbb.com/
