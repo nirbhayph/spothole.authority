@@ -189,7 +189,7 @@ https://docs.npmjs.com/downloading-and-installing-node-js-and-npm.
  * On your terminal. (You can use Git-Bash if you wish to) 
 
 ```
-1. git clone https://github.com/nirbhayph/spothole.git
+1. git clone https://github.com/nirbhayph/spothole.authority.git
 2. cd spothole.authority
 3. npm install 
 4. Change the API KEY for Google Maps by creating a key from https://developers.google.com/maps/documentation/javascript/get-api-key. 
