@@ -208,9 +208,9 @@ https://docs.npmjs.com/downloading-and-installing-node-js-and-npm.
 The authority's application has been hosted through GitHub pages. Refer the link: https://github.com/gitname/react-gh-pages to create a similar deployment. 
 
 ### Future Work
-* Parent authority section (Admin User)
-* In-app work order assignment 
-* Worker app 
+* Parent Authority Section (Admin User)
+* In-App Work Order Assignment 
+* Worker App 
 * Push Notifications 
 * Authority Hierarchy Management 
 * Permision Level System 
