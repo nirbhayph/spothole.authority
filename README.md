@@ -120,58 +120,55 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole.authority/Pro
 | axios | ^0.19.2 |
 | bootstrap | ^4.4.1 |
 | dateformat | ^3.0.3 |
-| filepond | ^4.12.0 |
-| filepond-plugin-file-validate-size | ^2.2.1 |
-| filepond-plugin-file-validate-type | ^1.2.4 |
-| filepond-plugin-image-exif-orientation | ^1.0.6 |
-| filepond-plugin-image-preview | ^4.6.1 |
 | gh-pages | ^2.2.0 |
 | lodash | ^4.17.15 |
-| react | ^16.13.0 |
-| react-dom | ^16.13.0 |
+| mui-datatables | ^2.14.0 |
+| react | ^16.13.1 |
+| react-dom | ^16.13.1 |
 | react-filepond | ^7.0.1 |
 | react-google-maps | ^9.4.5 |
-| react-html5-camera-photo | ^1.5.4 |
 | react-router | ^5.1.2 |
 | react-router-dom | ^5.1.2 |
-| react-scripts | 3.4.0 |
+| react-scripts | 3.4.1 |
+| recharts | ^1.8.5 |
 | recompose | ^0.30.0 |
 
 ### Process Description
-The Citizen's App has been Divided into 6 Major Sections. 
+The Authority's Application has been Divided into 6 Major Sections. 
 
-#### 1. Create New Report
-  * The users can navigate to the add a new report screen either by clicking on the floating action button at the bottom right or from the drawer by pressing the hamburger icon in the app bar. 
-  * Here, users have the option to start their report by uploading an existing image of a pothole they clicked by browsing through the file system or by clicking a fresh photo using the inbuilt camera. 
-  * Once users have decided on the method for uploading, the image under consideration is validated by the python based deep learning model placed on the backend server to verify if the image uploaded contains one or more potholes. 
-  * If the media file contains one or mpre potholes, the users are presented with an option to share more details about their report. 
-  * If not, users are presented with a feedback screen for an invalid image and the option to contact support.
-  * Assuming that the uploaded image is validated successfully, users are given the option to select a location (either current (presented after seeking permission)) or to enter a custom location. 
-  * After which users are asked to use a progress indicator to specify how severe the reported pothole(s) is(are) according to them.    
-  * Finally they are asked to give more details about their report through a required input text area componenet. 
-  * Once the user has successfully submitted the report, they can now view the same using the My Complaints Screen. 
+#### 1. Dashboard
+  * Once the authority has signed in successfully, they are presented with the dashboard screen which is divided into two main sections. 
+  * The first being the analytics section. This section contains two charts. 
+  * The first is a donut chart which shows a high level view of the user reports in the authority's zone based on the status (approved, submitted, in progress, etc).
+  * Next to that is the stacked bar chart which provides a more detailed view of the status, but this time based on severity as well. 
+  * The second section on the dashboard is a filterable data table containing details about the various user reports. This datatable has options for sorting, filtering, selecting specific columns, searching, exporting the data as csv and printing the table contents too. 
+  * On clicking any report in the datatable, the authority is presented with the option to update it (status and severity). On pressing update they are asked to describe their reason of update in a required custom description box. 
+  * Authorities can also comment on the report they clicked on and view all the other details of the report as a user would in their My Complaints screen. 
+  * Users are sent notifications through email after any update is made on their report. 
 
-#### 2. My Complaints
-  * On signing into the app with their Google Accounts, users are presented with the My Complaints Screen. 
+#### 2. Map Region View
+  * Another screen in the authority app is the map region view section. Here they can view potholes reported in their region through an interactive map view. 
   * Existing users who have at least one report created can manage the status of their report and add additional comments to it or reply on comments from authorities using this section of the App. 
-  * Users can click on any of the reports to view the detailed description for the report and monitor any notifications or to communicate with the authority through the chat section. 
-  
-#### 3. Route Navigation
-  * This screen presents the user with an option to enter the source and destination location. 
-  * After which a map is presented to the user based on the source and destination location entered by the user. A direction route is rendered on the map for the user. 
-  * It displays the route with the marked potholes on the path which were approved by the authorities. It uses Google's Maps API to build the route. 
-  * Custom markers for potholes with status approved ranging on severity are presented to the user on the route if they are close to the route.
-  * It determines if a pothole is assocaited with a path using the 'isLocationOnEdge' library function provided by Google Maps.
-  * A legend explaining the different attributes of the map is presented to the user. 
+  * A legend is displayed for helping understand the map better. 
+  * Custom markers for potholes with different status values ranging on severity are presented to the auhtority on the map. 
+  * Authorities can click on any of the markers to view the information window for it. On pressing the view button in the info window authorities are presented with the view and update detailed report section. 
+  * They can update the status and severity directly from this view after clicking the button in the info window. On pressing update they are asked to describe their reason of update in a required custom description box. 
+  * Authorities can also comment on the report they clicked on and view all the other details of the report as a user would in their My Complaints screen. 
+  * Users are sent notifications through email after any update is made on their report. 
   * Also, there is a street view renderer for the users. 
-  * This screen can be used by any logged in user to monitor a route and the status for the different potholes on it and plan travel accordingly. 
+  * Finally there is an option to toggle on and off a heat map layer which is weighted on the severity of potholes reported in the region. 
+  
+#### 3. Manage Users
+  * This screen presents the authority to manage all active users in their zone through a filterable data table. 
+  * The data table contains options to filter, search, sort, select columns. 
+  * They can view their basic profile details. 
+  * They can update thier status to either blocked or allowed based on their activity too. 
+  * Users are sent out email notifications regarding updates in their status everytime an authority makes a change. 
   
 #### 4. Profile 
   * This screen contains the basic details (avatar, name, email address of the user) 
-  * It is then followed by a counter for reports with a status of either submitted, approved or completed. 
-  * Based on the above counters the user is assigned with a badge score indicating their contribution to the community. 
-  * This score is a weighted average score based on the counters mentioned above.  
-  * This score can later be used for rewarding the user. (TBD)
+  * It also contains the address of the authority. 
+  * It is then followed by a counter for reports in the authority's zone with a status of either pending, in progress, approved, completed or cancelled. 
   
 #### 5. Sign In Screen 
   * This screen contains the option to login using Google. 
@@ -179,11 +176,13 @@ The Citizen's App has been Divided into 6 Major Sections.
   * This also uses the Unsplash API for generating random backgrounds on the side. (When in desktop mode)
   * The app also uses local storage actively to maintain the session state every time in communication with GAPI. 
   * OAuth2.0 Unsplash Logout Local Storage. 
+  * An important point to note is that in the authority's app the ouath api has been linked to a stand alone database to authorize authority log-ins. 
+  
 #### Note. Features associated with each screen have been mentioned in the Feature Stack Table. 
 
 (Process Diagram Here)
 
-### Instructions to Set-Up the Citizen Application
+### Instructions to Set-Up the Authority Application
  * Follow the instructions on this page to install nodejs and npm. Once successfully done, proceed to the next steps. 
 https://docs.npmjs.com/downloading-and-installing-node-js-and-npm.
 
@@ -191,32 +190,37 @@ https://docs.npmjs.com/downloading-and-installing-node-js-and-npm.
 
 ```
 1. git clone https://github.com/nirbhayph/spothole.git
-2. cd spothole
+2. cd spothole.authority
 3. npm install 
 4. Change the API KEY for Google Maps by creating a key from https://developers.google.com/maps/documentation/javascript/get-api-key. 
 5. Change the ClientId for Google Oauth from https://developers.google.com/identity/protocols/oauth2.
 6. Setup the flask and deep learning app on your machine by following the setup instructions for the backend. 
-7. Once your backend is working and you have tested the local apis using a tool like Postman, change the api constants in the utility folder of the citizen app's src/component directory
-8. Finally, npm start
-9. Enjoy using the app. Feel free to make contributions and raise Pull Requests. 
+7. Setup the database according to the instructions provided in the backend application's readme document. 
+8. Create at least one user in the authority datatabase before proceeding. 
+9. Once your backend is working and you have tested the local apis using a tool like Postman, change the api constants in the utility folder of the authority app's src/component directory
+10. Finally, npm start
+11. Enjoy using the app. Feel free to make contributions and raise Pull Requests. 
 ```
- * Visit http://localhost:3000 in your browser to see spothole citizen application running.
+ * Visit http://localhost:3000 in your browser to see spothole authority application running.
 
 ### Deploying 
 
-The citizen's application has been hosted through GitHub pages. Refer the link: https://github.com/gitname/react-gh-pages to create a similar deployment. 
+The authority's application has been hosted through GitHub pages. Refer the link: https://github.com/gitname/react-gh-pages to create a similar deployment. 
 
 ### Future Work
-* Severity based direction renderer (User Interface Changes)
-* Adding additional parameters to the frontend after implemented in the backend. (Pothole Dimensions) 
-* Offline capabilities (Camera Componenet)
-* Realtime Notifications (In-App)
+* Parent authority section (Admin User)
+* In-app work order assignment 
+* Worker app 
+* Push Notifications 
+* Authority Hierarchy Management 
+* Permision Level System 
+* Extended Analytics Section (Hierarchy Based) 
 * Linking Social Platforms (Twitter)
 * News Feed 
 * Reward System 
 
 ### Note 
-For developers out there, if you wish to contribute to the project, feel free to do so. 
+For developers out there, if you wish to contribute to the project, feel free to do so. Please review the future work section and create pull requests for ideas and thoughts. Once approved, we can follow up with more discussions.  
 
 ### License
 This project is licensed under the MIT License - see the LICENSE.md file for details
@@ -237,8 +241,9 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 * @google-maps-api - https://developers.google.com/maps/documentation/javascript/
 * @google-oauth-gapi - https://developers.google.com/identity/protocols/oauth2
 * @mui-treasury - https://mui-treasury.com/
+* @mui-datatable - https://github.com/gregnb/mui-datatables
+* @recharts - http://recharts.org/en-US/
 * @axios - https://www.npmjs.com/package/axios
-* @filepond - https://www.npmjs.com/package/filepond
 * @dateformat - https://www.npmjs.com/package/dateformat
 * @AmericanAutomobileAssociation - https://www.aaa.com/stop/
 * @SafetyResourceCenter - https://www.trafficsafetystore.com/blog/the-plague-of-potholes-how-to-save-americas-roadways/
