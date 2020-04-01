@@ -180,7 +180,9 @@ The Authority's Application has been Divided into 6 Major Sections.
   
 #### Note. Features associated with each screen have been mentioned in the Feature Stack Table. 
 
-(Process Diagram Here)
+#### System Level Diagram 
+
+<img src="https://github.com/nirbhayph/spothole.authority/blob/develop/public/Screenshots/SystemDiagram/Spothole_Authority_White_Bg.png"/>
 
 ### Instructions to Set-Up the Authority Application
  * Follow the instructions on this page to install nodejs and npm. Once successfully done, proceed to the next steps. 
