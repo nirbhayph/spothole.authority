@@ -266,5 +266,14 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 * @snap2html - https://www.rlvision.com/snap2html/about.php
 
 ### App Screenshots 
-
+<a href="https://github.com/nirbhayph/spothole.authority/blob/develop/public/Screenshots/1.png"><img src="https://github.com/nirbhayph/spothole.authority/blob/develop/public/Screenshots/1.png" align="left" height="540" width="270" alt="1"></a>
+<a href="https://github.com/nirbhayph/spothole.authority/blob/develop/public/Screenshots/2.png"><img src="https://github.com/nirbhayph/spothole.authority/blob/develop/public/Screenshots/2.png" align="left" height="540" width="270" alt="2"></a>
+<a href="https://github.com/nirbhayph/spothole.authority/blob/develop/public/Screenshots/3.png"><img src="https://github.com/nirbhayph/spothole.authority/blob/develop/public/Screenshots/3.png" align="left" height="540" width="270" alt="3"></a>
+<a href="https://github.com/nirbhayph/spothole.authority/blob/develop/public/Screenshots/4.png"><img src="https://github.com/nirbhayph/spothole.authority/blob/develop/public/Screenshots/4.png" align="left" height="540" width="270" alt="4"></a>
+<a href="https://github.com/nirbhayph/spothole.authority/blob/develop/public/Screenshots/5.png"><img src="https://github.com/nirbhayph/spothole.authority/blob/develop/public/Screenshots/5.png" align="left" height="540" width="270" alt="5"></a>
+<a href="https://github.com/nirbhayph/spothole.authority/blob/develop/public/Screenshots/6.png"><img src="https://github.com/nirbhayph/spothole.authority/blob/develop/public/Screenshots/6.png" align="left" height="540" width="270" alt="6"></a>
+<a href="https://github.com/nirbhayph/spothole.authority/blob/develop/public/Screenshots/7.png"><img src="https://github.com/nirbhayph/spothole.authority/blob/develop/public/Screenshots/7.png" align="left" height="540" width="270" alt="7"></a>
+<a href="https://github.com/nirbhayph/spothole.authority/blob/develop/public/Screenshots/8.png"><img src="https://github.com/nirbhayph/spothole.authority/blob/develop/public/Screenshots/8.png" align="left" height="540" width="270" alt="8"></a>
+<a href="https://github.com/nirbhayph/spothole.authority/blob/develop/public/Screenshots/9.png"><img src="https://github.com/nirbhayph/spothole.authority/blob/develop/public/Screenshots/9.png" align="left" height="540" width="270" alt="9"></a>
+<a href="https://github.com/nirbhayph/spothole.authority/blob/develop/public/Screenshots/10.png"><img src="https://github.com/nirbhayph/spothole.authority/blob/develop/public/Screenshots/10.png" align="left" height="540" width="270" alt="10"></a>
 
