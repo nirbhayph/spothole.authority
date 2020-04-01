@@ -188,6 +188,10 @@ The Authority's Application has been Divided into 6 Major Sections.
 
 Please visit this link to view the detailed wireframes for the auhtority app. https://nirbhay.me/spothole.authority/WireFrames/
 
+### Technology Stack (Complete Frontend and Backend)
+
+<img src="https://github.com/nirbhayph/spothole.core/blob/master/screenshots/technology_stack/spothole_stack_white_bg.png"/>
+
 ### Instructions to Set-Up the Authority Application
  * Follow the instructions on this page to install nodejs and npm. Once successfully done, proceed to the next steps. 
 https://docs.npmjs.com/downloading-and-installing-node-js-and-npm.
