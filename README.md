@@ -198,12 +198,14 @@ https://docs.npmjs.com/downloading-and-installing-node-js-and-npm.
 1. git clone https://github.com/nirbhayph/spothole.authority.git
 2. cd spothole.authority
 3. npm install 
-4. Change the API KEY for Google Maps by creating a key from https://developers.google.com/maps/documentation/javascript/get-api-key. 
+4. Change the API KEY for Google Maps by creating a key 
+from https://developers.google.com/maps/documentation/javascript/get-api-key. 
 5. Change the ClientId for Google Oauth from https://developers.google.com/identity/protocols/oauth2.
 6. Setup the flask and deep learning app on your machine by following the setup instructions for the backend. 
 7. Setup the database according to the instructions provided in the backend application's readme document. 
 8. Create at least one user in the authority datatabase before proceeding. 
-9. Once your backend is working and you have tested the local apis using a tool like Postman, change the api constants in the utility folder of the authority app's src/component directory
+9. Once your backend is working and you have tested the local apis using a 
+tool like Postman, change the api constants in the utility folder of the authority app's src/component directory
 10. Finally, npm start
 11. Enjoy using the app. Feel free to make contributions and raise Pull Requests. 
 ```
@@ -267,14 +269,38 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 
 ### App Screenshots 
 
+#### Analytics Section (Authority Dashboard)
+
 <img src="https://github.com/nirbhayph/spothole.authority/blob/gh-pages/Screenshots/1.png" alt="1"/>
+
+#### Filterable Reports Datatable (Authority Dashboard Zone Wise)
+
 <img src="https://github.com/nirbhayph/spothole.authority/blob/gh-pages/Screenshots/2.PNG" alt="2"/>
+
+#### Filter Active (Authority Dashboard)
 <img src="https://github.com/nirbhayph/spothole.authority/blob/gh-pages/Screenshots/3.PNG" alt="3"/>
+
+#### View and Update Report (Authority, Map Region View)
+
 <img src="https://github.com/nirbhayph/spothole.authority/blob/gh-pages/Screenshots/4.png" alt="4"/>
+
+#### Comments Section and Static Map(Report)
+
 <img src="https://github.com/nirbhayph/spothole.authority/blob/gh-pages/Screenshots/5.png" alt="5"/>
+
+#### Map Region View (Zone Reports, Severity Based)
+
 <img src="https://github.com/nirbhayph/spothole.authority/blob/gh-pages/Screenshots/6.PNG" alt="6"/>
+
+#### Heat Mapping Layer (Toogle)
 <img src="https://github.com/nirbhayph/spothole.authority/blob/gh-pages/Screenshots/7.PNG" alt="7"/>
+
+#### Manage Users Section 
 <img src="https://github.com/nirbhayph/spothole.authority/blob/gh-pages/Screenshots/8.PNG" alt="8"/>
+
+#### Block / Unblock Status
 <img src="https://github.com/nirbhayph/spothole.authority/blob/gh-pages/Screenshots/9.PNG" alt="9"/>
+
+#### Authority's Profile (User Report Statistics)
 <img src="https://github.com/nirbhayph/spothole.authority/blob/gh-pages/Screenshots/10.PNG" alt="10"/>
 
