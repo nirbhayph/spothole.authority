@@ -180,9 +180,21 @@ The Authority's Application has been Divided into 6 Major Sections.
   
 #### Note. Features associated with each screen have been mentioned in the Feature Stack Table. 
 
+### System Level Diagram 
+
+<img src="https://github.com/nirbhayph/spothole/blob/develop/public/Screenshots/SystemDiagram/Citizen_App_System_Diagram_White_Bg.png"/>
+
+### Citizen App's Wireframes
+
+Please visit this link to view the detailed wireframes for the app. https://nirbhay.me/spothole/WireFrames/
+
 #### System Level Diagram 
 
 <img src="https://github.com/nirbhayph/spothole.authority/blob/develop/public/Screenshots/SystemDiagram/Spothole_Authority_White_Bg.png"/>
+
+### Authority's App's Wireframes
+
+Please visit this link to view the detailed wireframes for the auhtority app. https://nirbhay.me/spothole.authority/WireFrames/
 
 ### Instructions to Set-Up the Authority Application
  * Follow the instructions on this page to install nodejs and npm. Once successfully done, proceed to the next steps. 
