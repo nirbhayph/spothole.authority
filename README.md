@@ -308,3 +308,50 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 #### Authority's Profile (User Report Statistics)
 <img src="https://github.com/nirbhayph/spothole.authority/blob/gh-pages/Screenshots/10.PNG" alt="10"/>
 
+| Acknowledgement and Mention | URL |
+| --- | --- |
+| github | https://github.com |
+| githublfs | https://git-lfs.github.com/ |
+| smtplib | https://docs.python.org/3/library/smtplib.html |
+| tensorflow | https://www.tensorflow.org/install/pip |
+| darkflow | https://github.com/thtrieu/darkflow |
+| darknet | https://pjreddie.com/darknet/ |
+| filezilla | https://filezilla-project.org/ |
+| postman | https://www.postman.com/ |
+| chrome-dev | https://developers.google.com/web/tools/chrome-devtools |
+| aws | https://aws.amazon.com/ |
+| certbot | https://certbot.eff.org/ |
+| freenom | https://www.freenom.com/en/index.html?lang=en |
+| labelimg | https://github.com/tzutalin/labelImg |
+| stackoverflow | https://stackoverflow.com/ |
+| mysql | https://www.mysql.com/ |
+| lucidchart | https://www.lucidchart.com/ |
+| flask | https://flask.palletsprojects.com/en/1.1.x/ |
+| cv2 | https://pypi.org/project/opencv-python/ |
+| dbdiagram.io | https://dbdiagram.io/home |
+| letsencrypt | https://letsencrypt.org/ |
+| reactjs | https://reactjs.org/ |
+| material-design-react | https://material-ui.com/ |
+| react-google-maps | https://www.npmjs.com/package/react-google-maps |
+| google-maps-api | https://developers.google.com/maps/documentation/javascript/ |
+| google-oauth-gapi | https://developers.google.com/identity/protocols/oauth2 |
+| mui-treasury | https://mui-treasury.com/ |
+| axios | https://www.npmjs.com/package/axios |
+| filepond | https://www.npmjs.com/package/filepond |
+| dateformat | https://www.npmjs.com/package/dateformat |
+| AmericanAutomobileAssociation | https://www.aaa.com/stop/ |
+| SafetyResourceCenter | https://www.trafficsafetystore.com/blog/the-plague-of-potholes-how-to-save-americas-roadways/ |
+| loadash | https://lodash.com/ |
+| create-react-app | https://reactjs.org/docs/create-a-new-react-app.html |
+| gh-pages | https://www.npmjs.com/package/gh-pages |
+| github | https://github.com |
+| dhirensc | https://github.com/dhirensc |
+| roshniw | https://roshniwadhwa.me |
+| trello | https://trello.com |
+| figma | https://figma.com |
+| google-keep | https://keep.google.com |
+| npmjs | https://www.npmjs.com |
+| snap2html | https://www.rlvision.com/snap2html/about.php |
+| mui-datatable | https://github.com/gregnb/mui-datatables |
+| recharts | http://recharts.org/en-US/ |
+| imgbb | https://imgbb.com/ |
