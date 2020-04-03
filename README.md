@@ -134,7 +134,7 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole.authority/Pro
 | recompose | ^0.30.0 |
 
 ### Process Description
-The Authority's Application has been Divided into 6 Major Sections. 
+The Authority's Application has been Divided into 5 Major Sections. 
 
 #### 1. Dashboard
   * Once the authority has signed in successfully, they are presented with the dashboard screen which is divided into two main sections. 
