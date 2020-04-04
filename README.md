@@ -192,6 +192,9 @@ Please visit this link to view the detailed wireframes for the auhtority app. ht
 
 <img src="https://github.com/nirbhayph/spothole.core/blob/master/screenshots/technology_stack/spothole_stack_white_bg.png"/>
 
+### Architectural Tiers (Complete Frontend and Backend)
+<img src="https://github.com/nirbhayph/spothole.core/blob/master/screenshots/architectural_tiers/architectural_tiers.png"/>
+
 ### Instructions to Set-Up the Authority Application
  * Follow the instructions on this page to install nodejs and npm. Once successfully done, proceed to the next steps. 
 https://docs.npmjs.com/downloading-and-installing-node-js-and-npm.
