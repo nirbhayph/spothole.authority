@@ -4,7 +4,7 @@
 
 ## Spothole Authority Web/Mobile App
 
-This project is the <b>Front End Management Segment</b> for the <b>Capstone Project</b> for my <b>Master's in Information Sciences and Technologies</b> at <b>Rochester Institute of Technology</b>.
+This repository covers the <b>Front End Management Segment</b> for the <b>Capstone Project</b> for my <b>Master's in Information Sciences and Technologies</b> at <b>Rochester Institute of Technology</b>.
 
 ### Project Committee Members:
  * Dr. Charles Border
