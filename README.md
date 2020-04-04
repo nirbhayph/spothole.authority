@@ -43,7 +43,7 @@ Keeping the roads in good condition along with tracking damages is a challenge w
 
 ### App Preview
 
-<b> From Wire Frames to Reality! </b>
+#### From Wire Frames to Reality! 
 <img src="https://media.giphy.com/media/kBHgwA0xcRvuNFm6Cl/giphy.gif" width="60%" alt="Authority App GIF"/>
 
 ### Important URLs
