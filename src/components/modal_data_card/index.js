@@ -17,21 +17,22 @@ import "./css/modal_data_card.css";
 import { Avatar } from "@material-ui/core";
 import StatusSelect from "./../status_select";
 import AlertDialogWithComment from "./../alert_comment";
+import { GOOGLE_MAPS_API_KEY } from "./../../utility/constants.js";
 
 const useStyles = makeStyles({
   root: {
     maxWidth: 700,
-    margin: "0 auto"
+    margin: "0 auto",
   },
   media: {
-    height: 140
+    height: 140,
   },
   mediaMap: {
-    height: 200
+    height: 200,
   },
   headerTextColor: {
-    color: "white"
-  }
+    color: "white",
+  },
 });
 
 export default function DetailedDataCard(props) {
@@ -54,7 +55,9 @@ export default function DetailedDataCard(props) {
     props.data.latitude +
     "," +
     props.data.longitude +
-    "&key=AIzaSyDZBgT-uZYXzTSkTJbiDcYT4D_XYsS8aUQ&zoom=15";
+    "&key=" +
+    GOOGLE_MAPS_API_KEY +
+    "&zoom=15";
 
   return (
     <Card
@@ -81,7 +84,7 @@ export default function DetailedDataCard(props) {
                 style={{
                   display: "inline-block",
                   position: "relative",
-                  top: "3px"
+                  top: "3px",
                 }}
               >
                 &nbsp; &nbsp; {props.data.profileName}

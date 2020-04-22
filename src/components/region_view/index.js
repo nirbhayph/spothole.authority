@@ -12,39 +12,42 @@ import {
   withGoogleMap,
   GoogleMap,
   Marker,
-  InfoWindow
+  InfoWindow,
 } from "react-google-maps";
 import HeatmapLayer from "react-google-maps/lib/components/visualization/HeatmapLayer";
 import {
   GET_GEO_NEAR_REPORTS,
   ROUTE_ICON_IMAGE_HIGH,
   ROUTE_ICON_IMAGE_MEDIUM,
-  ROUTE_ICON_IMAGE_LOW
+  ROUTE_ICON_IMAGE_LOW,
+  GOOGLE_MAPS_API_KEY,
 } from "./../../utility/constants.js";
 
 const MapView = compose(
   withProps({
     googleMapURL:
-      "https://maps.googleapis.com/maps/api/js?key=AIzaSyDZBgT-uZYXzTSkTJbiDcYT4D_XYsS8aUQ&v=3.exp&libraries=geometry,drawing,places,visualization",
+      "https://maps.googleapis.com/maps/api/js?key=" +
+      GOOGLE_MAPS_API_KEY +
+      "&v=3.exp&libraries=geometry,drawing,places,visualization",
     loadingElement: <div style={{ height: `100%` }} />,
     containerElement: <div style={{ height: `400px` }} />,
-    mapElement: <div style={{ height: `100%` }} />
+    mapElement: <div style={{ height: `100%` }} />,
   }),
   withStateHandlers(
     () => ({
       isOpen: false,
       infoIndex: null,
       selectedReports: [],
-      heatMapOn: false
+      heatMapOn: false,
     }),
     {
-      onToggleOpen: ({ isOpen, infoIndex }) => index => ({
+      onToggleOpen: ({ isOpen, infoIndex }) => (index) => ({
         isOpen: !isOpen,
-        infoIndex: index
+        infoIndex: index,
       }),
-      toggleHeatMap: ({ heatMapOn }) => heatOn => ({
-        heatMapOn: !heatOn
-      })
+      toggleHeatMap: ({ heatMapOn }) => (heatOn) => ({
+        heatMapOn: !heatOn,
+      }),
     }
   ),
   withScriptjs,
@@ -55,30 +58,30 @@ const MapView = compose(
       axios
         .post(GET_GEO_NEAR_REPORTS, {
           data: {
-            authorityId: this.props.authorityId
-          }
+            authorityId: this.props.authorityId,
+          },
         })
-        .then(response => {
-          let heatMapData = response.data.map(report => {
+        .then((response) => {
+          let heatMapData = response.data.map((report) => {
             return {
               location: new google.maps.LatLng(
                 report.latitude,
                 report.longitude
               ),
-              weight: report.severity
+              weight: report.severity,
             };
           });
           self.setState({
             selectedReports: response.data,
-            heatMapData: heatMapData
+            heatMapData: heatMapData,
           });
         })
-        .catch(error => {
+        .catch((error) => {
           console.info("Unable to create the region map");
         });
-    }
+    },
   })
-)(props => {
+)((props) => {
   return (
     <div>
       <Button
@@ -89,7 +92,7 @@ const MapView = compose(
           float: "right",
           marginTop: "20px",
           marginBottom: "20px",
-          position: "relative"
+          position: "relative",
         }}
       >
         Toogle Heat Map Layer
@@ -98,7 +101,7 @@ const MapView = compose(
         defaultZoom={14}
         defaultCenter={{
           lat: parseFloat(props.centerLat),
-          lng: parseFloat(props.centerLng)
+          lng: parseFloat(props.centerLng),
         }}
       >
         {props.selectedReports.map((report, index) => {
@@ -123,7 +126,7 @@ const MapView = compose(
               key={index}
               position={{
                 lat: parseFloat(report.latitude),
-                lng: parseFloat(report.longitude)
+                lng: parseFloat(report.longitude),
               }}
               onClick={() => props.onToggleOpen(index)}
             >
@@ -138,7 +141,7 @@ const MapView = compose(
                       display: "flex",
                       justifyContent: "space-between",
                       marginTop: "3px",
-                      marginRight: "3px"
+                      marginRight: "3px",
                     }}
                   >
                     <div
@@ -147,7 +150,7 @@ const MapView = compose(
                         paddingRight: "10px",
                         paddingBottom: "10px",
                         fontWeight: "bold",
-                        lineHeight: 1.5
+                        lineHeight: 1.5,
                       }}
                     >
                       Reported On: {report.created_date.split(" ")[0]}
@@ -174,7 +177,7 @@ const MapView = compose(
                           border: "2px solid black",
                           borderRadius: "10px",
                           marginRight: "10px",
-                          marginBottom: "10px"
+                          marginBottom: "10px",
                         }}
                         alt={"Validated Pothole"}
                       />
@@ -190,7 +193,7 @@ const MapView = compose(
             data={props.heatMapData}
             options={{
               radius: 60,
-              opacity: 0.8
+              opacity: 0.8,
             }}
           />
         ) : (
@@ -198,7 +201,7 @@ const MapView = compose(
             data={props.heatMapData}
             options={{
               radius: 0,
-              opacity: 0
+              opacity: 0,
             }}
           />
         )}
