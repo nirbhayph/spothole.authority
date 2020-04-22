@@ -90,7 +90,7 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole.authority/Pro
 | Filterable Datatable for Displaying Zone Wise Users | Manage Users |
 | Search Users (Datatable) | Manage Users |
 | Block Users (Datatable) | Manage Users |
-| Email Notifcation on Block / Unblock | Manage Users |
+| Email Notification on Block / Unblock | Manage Users |
 | Profile Details (Avatar, Name , Email Id) | Profile |
 | Authority's Summarized Report Statistics Based on Status (Submitted, Approved, Completed, Working, Cancelled) | Profile |
 | Custom Random Background | Log In | 
@@ -105,7 +105,7 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole.authority/Pro
 * The Application has been built using React.js
 * Material Design has been used throughout the App.
 * Material UI Icons have been used for Icons. 
-* MUI-Treasury Componenets have been used for additional needs (Like Card View in the Profile Screen)
+* MUI-Treasury Components have been used for additional needs (Like Card View in the Profile Screen)
 * Axios has been used for making REST Calls to the Backend.
 * GitHub Pages has been used for Static Deployment of the Application. 
 * React Google Maps has been used for all Mapping, Heat Mapping, Marker Needs. 
@@ -159,7 +159,7 @@ The Authority's Application has been Divided into 5 Major Sections.
   * Another screen in the authority app is the map region view section. Here they can view potholes reported in their region through an interactive map view. 
   * Existing users who have at least one report created can manage the status of their report and add additional comments to it or reply on comments from authorities using this section of the App. 
   * A legend is displayed for helping understand the map better. 
-  * Custom markers for potholes with different status values ranging on severity are presented to the auhtority on the map. 
+  * Custom markers for potholes with different status values ranging on severity are presented to the authority on the map. 
   * Authorities can click on any of the markers to view the information window for it. On pressing the view button in the info window authorities are presented with the view and update detailed report section. 
   * They can update the status and severity directly from this view after clicking the button in the info window. On pressing update they are asked to describe their reason of update in a required custom description box. 
   * Authorities can also comment on the report they clicked on and view all the other details of the report as a user would in their My Complaints screen. 
@@ -171,7 +171,7 @@ The Authority's Application has been Divided into 5 Major Sections.
   * This screen presents the authority to manage all active users in their zone through a filterable data table. 
   * The data table contains options to filter, search, sort, select columns. 
   * They can view their basic profile details. 
-  * They can update thier status to either blocked or allowed based on their activity too. 
+  * They can update their status to either blocked or allowed based on their activity too. 
   * Users are sent out email notifications regarding updates in their status everytime an authority makes a change. 
   
 #### 4. Profile 
@@ -195,7 +195,7 @@ The Authority's Application has been Divided into 5 Major Sections.
 
 ### Authority's App's Wireframes
 
-Please visit this link to view the detailed wireframes for the auhtority app. https://nirbhay.me/spothole.authority/WireFrames/
+Please visit this link to view the detailed wireframes for the authority app. https://nirbhay.me/spothole.authority/WireFrames/
 
 ### Technology Stack (Complete Frontend and Backend)
 
@@ -237,7 +237,7 @@ The authority's application has been hosted through GitHub pages. Refer the link
 * Worker App 
 * Push Notifications 
 * Authority Hierarchy Management 
-* Permision Level System 
+* Permission Level System 
 * Extended Analytics Section (Hierarchy Based) 
 * Linking Social Platforms (Twitter)
 * News Feed 
