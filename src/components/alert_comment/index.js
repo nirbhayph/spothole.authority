@@ -15,7 +15,7 @@ import HeaderTextCard from "./../header_text_card";
 import {
   UPDATE_REPORT_STATUS,
   SUBMIT_REPORT_COMMENT,
-  SEND_EMAIL
+  SEND_EMAIL,
 } from "./../../utility/constants.js";
 import axios from "axios";
 
@@ -26,7 +26,7 @@ export default class AlertDialogWithComment extends React.Component {
     this.state = {
       makeBoxEmptyFunction: "",
       commentText: "",
-      buttonDisabled: true
+      buttonDisabled: true,
     };
     self = this;
   }
@@ -40,10 +40,10 @@ export default class AlertDialogWithComment extends React.Component {
         data: {
           caseId: caseId,
           status: updatedStatus,
-          severity: updatedSeverity
-        }
+          severity: updatedSeverity,
+        },
       })
-      .then(reponse => {
+      .then((reponse) => {
         axios
           .post(SUBMIT_REPORT_COMMENT, {
             data: {
@@ -55,10 +55,10 @@ export default class AlertDialogWithComment extends React.Component {
                 "] - " +
                 self.state.commentText,
               caseId: caseId,
-              userType: "A"
-            }
+              userType: "A",
+            },
           })
-          .then(response => {
+          .then((response) => {
             console.info("Report Updated");
 
             // For sending email to notify user
@@ -68,7 +68,7 @@ export default class AlertDialogWithComment extends React.Component {
               self.props.mailToProfileName +
               ",\n\nThere is an update to your report (Case Id #" +
               caseId +
-              "). Please login to check the details. \n\nIf you have additional questions, feel free to send an email to support.spothole@gmail.com or comment on the report. Thank you for being a part of the Spothole community.";
+              "). Please login to check the details. \n\nIf you have additional questions, feel free to send an email to contact.spothole@gmail.com or comment on the report. Thank you for being a part of the Spothole community.";
             axios
               .post(SEND_EMAIL, {
                 data: {
@@ -77,39 +77,39 @@ export default class AlertDialogWithComment extends React.Component {
                     "Case Id #" +
                     caseId +
                     ": New Notification from Spothole (Your Report Status)",
-                  message: statusMessage
-                }
+                  message: statusMessage,
+                },
               })
-              .then(response => {
+              .then((response) => {
                 console.info(response.data);
                 window.location.reload();
               })
-              .catch(error => {
+              .catch((error) => {
                 window.location.reload();
               });
           })
-          .catch(error => {
+          .catch((error) => {
             console.info("Unable to Update Report");
           });
       })
-      .catch(error => {
+      .catch((error) => {
         console.info("Unable to Update Report");
       });
   };
 
   // for a new message, updates the state
   // of the submit button (validation)
-  setDescription = description => {
+  setDescription = (description) => {
     this.setState({
-      commentText: description
+      commentText: description,
     });
     if (description === "") {
       this.setState({
-        buttonDisabled: true
+        buttonDisabled: true,
       });
     } else {
       this.setState({
-        buttonDisabled: false
+        buttonDisabled: false,
       });
     }
   };
@@ -119,9 +119,9 @@ export default class AlertDialogWithComment extends React.Component {
   };
 
   // empties the description box by resetting the state variable
-  makeEmpty = makeBoxEmpty => {
+  makeEmpty = (makeBoxEmpty) => {
     self.setState({
-      makeBoxEmptyFunction: makeBoxEmpty
+      makeBoxEmptyFunction: makeBoxEmpty,
     });
   };
 

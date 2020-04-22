@@ -11,7 +11,7 @@ import axios from "axios";
 import {
   GET_GEO_NEAR_REPORTS,
   UPDATE_USER_STATUS,
-  SEND_EMAIL
+  SEND_EMAIL,
 } from "./../../utility/constants.js";
 import MUIDataTable from "mui-datatables";
 import AlertDialog from "./../../components/alert_update_user_status";
@@ -23,10 +23,10 @@ let getMuiTheme = () =>
     overrides: {
       MuiTableRow: {
         root: {
-          cursor: "pointer"
-        }
-      }
-    }
+          cursor: "pointer",
+        },
+      },
+    },
   });
 
 class Users extends React.Component {
@@ -36,27 +36,27 @@ class Users extends React.Component {
       usersDataTable: "",
       dialogOpenState: false,
       clickedRow: "",
-      dataCounter: 0
+      dataCounter: 0,
     };
     let self = this;
     axios
       .post(GET_GEO_NEAR_REPORTS, {
         data: {
-          authorityId: this.props.authorityId
-        }
+          authorityId: this.props.authorityId,
+        },
       })
-      .then(response => {
+      .then((response) => {
         if (response.data.length > 0) {
           let data = response.data;
           let madeData = {};
 
-          let formattedData = data.forEach(report => {
+          let formattedData = data.forEach((report) => {
             if (madeData[report.userId] === undefined) {
               madeData[report.userId] = {
                 "User Id": report.userId,
                 Name: this.capitalize(report.user_full_name),
                 Email: report.user_email,
-                "User Status": this.capitalize(report.user_status)
+                "User Status": this.capitalize(report.user_status),
               };
             }
           });
@@ -64,12 +64,12 @@ class Users extends React.Component {
 
           let finalColumns = [];
           let columns = Object.keys(formattedData[0]);
-          columns.forEach(columnName => {
+          columns.forEach((columnName) => {
             let column = {
               name: columnName,
               options: {
-                display: columnName === "User Id" ? false : true
-              }
+                display: columnName === "User Id" ? false : true,
+              },
             };
             finalColumns.push(column);
           });
@@ -78,14 +78,14 @@ class Users extends React.Component {
             onRowClick: (rowData, rowState) => {
               this.setState({
                 dialogOpenState: true,
-                clickedRow: rowData
+                clickedRow: rowData,
               });
             },
-            selectableRows: "none"
+            selectableRows: "none",
           };
           self.setState(
             {
-              dataCounter: finalColumns.length
+              dataCounter: finalColumns.length,
             },
             () => {
               self.setState({
@@ -98,7 +98,7 @@ class Users extends React.Component {
                       options={options}
                     />
                   </MuiThemeProvider>
-                )
+                ),
               });
             }
           );
@@ -106,7 +106,7 @@ class Users extends React.Component {
       });
   }
 
-  capitalize = str => {
+  capitalize = (str) => {
     str = str.split(" ");
 
     for (let i = 0, x = str.length; i < x; i++) {
@@ -118,7 +118,7 @@ class Users extends React.Component {
 
   updateDialogState = () => {
     this.setState({
-      dialogOpenState: false
+      dialogOpenState: false,
     });
   };
 
@@ -127,18 +127,19 @@ class Users extends React.Component {
       .post(UPDATE_USER_STATUS, {
         data: {
           userId: this.state.clickedRow[0],
-          status: this.state.clickedRow[3] === "Allowed" ? "blocked" : "allowed"
-        }
+          status:
+            this.state.clickedRow[3] === "Allowed" ? "blocked" : "allowed",
+        },
       })
-      .then(response => {
+      .then((response) => {
         let allowedMessage =
           "Hi " +
           this.state.clickedRow[1] +
-          ",\n\nWe have decided to turn your status back to allowed. You can now try signing into your account now. \n\nIf you have additional questions, feel free to send an email to support.spothole@gmail.com. Thank you for being a part of the Spothole community.";
+          ",\n\nWe have decided to turn your status back to allowed. You can now try signing into your account now. \n\nIf you have additional questions, feel free to send an email to contact.spothole@gmail.com. Thank you for being a part of the Spothole community.";
         let blockedMessage =
           "Hi " +
           this.state.clickedRow[1] +
-          ",\n\nThere seems to be some unusual activity from your account. Your status has to be turned to blocked. \n\nIf you have additional questions, feel free to send an email to support.spothole@gmail.com. Thank you for joining the Spothole community.";
+          ",\n\nThere seems to be some unusual activity from your account. Your status has to be turned to blocked. \n\nIf you have additional questions, feel free to send an email to contact.spothole@gmail.com. Thank you for joining the Spothole community.";
         axios
           .post(SEND_EMAIL, {
             data: {
@@ -147,15 +148,15 @@ class Users extends React.Component {
               message:
                 this.state.clickedRow[3] === "Allowed"
                   ? blockedMessage
-                  : allowedMessage
-            }
+                  : allowedMessage,
+            },
           })
-          .then(response => {
+          .then((response) => {
             console.info(response.data);
             window.location.reload();
           });
       })
-      .catch(error => {
+      .catch((error) => {
         console.info("Cannot update status currently!");
       });
   };
@@ -181,7 +182,7 @@ class Users extends React.Component {
                 style={{
                   textAlign: "center",
                   fontSize: "1.5em",
-                  maxWidth: "500"
+                  maxWidth: "500",
                 }}
               >
                 View active users in your region and manage their permissions
@@ -197,7 +198,7 @@ class Users extends React.Component {
               fontWeight: "bold",
               fontSize: "24px",
               marginTop: "150px",
-              color: "#333"
+              color: "#333",
             }}
           >
             {" "}
