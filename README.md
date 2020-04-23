@@ -54,6 +54,9 @@ Link to Landing Page: https://nirbhay.me/spothole/home
 #### Demo 
 Link to App Demo: https://nirbhay.me/spothole.authority/
 
+#### Presentation
+Link to Canva Presentation: https://bit.ly/spothole-ppt
+
 #### Authority's App Wire Frames
 Link to App Wire Frames: https://nirbhay.me/spothole.authority/WireFrames/
 
